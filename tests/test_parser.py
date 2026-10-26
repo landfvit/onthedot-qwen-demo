@@ -124,7 +124,10 @@ def test_missing_recordings_produce_actionable_error(tmp_path, monkeypatch):
         parser.examples()
 
 
-@pytest.mark.parametrize("question", ["", "  ", None, 42, "x" * 1001])
+@pytest.mark.parametrize(
+    "question", ["", "  ", None, 42, "x" * 1001],
+    ids=["empty", "whitespace", "none", "non-string", "too-long"],
+)
 def test_bad_questions_rejected_before_loading_model(question, monkeypatch):
     monkeypatch.setattr(parser, "_load_runtime", lambda: pytest.fail("model must not load"))
     with pytest.raises(ValueError):
@@ -444,6 +447,7 @@ def test_ollama_rejects_different_model_or_malformed_chat(ollama_http, response)
 @pytest.mark.parametrize(
     "response",
     [TimeoutError("timeout"), URLError("not running"), b"not json", [], {"error": "model missing"}, b"x" * (ollama.MAX_RESPONSE_BYTES + 1)],
+    ids=["timeout", "unavailable", "invalid-json", "wrong-type", "model-error", "oversized-body"],
 )
 def test_ollama_errors_and_oversized_responses_are_actionable(ollama_http, response):
     responses, _, _ = ollama_http
