@@ -119,8 +119,8 @@ def test_public_manifest_has_no_match_rows_and_hashes_the_exact_private_bytes(co
     data_path, metadata_path = tmp_path / "private.json", tmp_path / "catalog.json"
     manifest = exporter.export_season("not logged", 2024, data_path, metadata_path)
     assert manifest["dataset_id"] == hashlib.sha256(data_path.read_bytes()).hexdigest()
-    assert json.loads(data_path.read_text())["catalog"] == manifest["catalog"]
-    assert json.loads(metadata_path.read_text()) == manifest
+    assert json.loads(data_path.read_text(encoding="utf-8"))["catalog"] == manifest["catalog"]
+    assert json.loads(metadata_path.read_text(encoding="utf-8")) == manifest
     assert set(manifest) == {"dataset_id", "catalog", "notice", "source", "counts", "date_range"}
     assert "fixtures" not in manifest and "goals" not in json.dumps(manifest)
 

@@ -173,7 +173,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--database", required=True, help="Explicit PostgreSQL DSN. It is never logged.")
     parser.add_argument("--season", type=int, default=2024, help="Provider starting year, for example 2024 means 2024-25.")
-    parser.add_argument("--output", type=Path, default=Path(".local/real-season.json"))
+    parser.add_argument("--output", type=Path, default=Path("data/season.json"))
     parser.add_argument("--catalog", type=Path, default=Path("data/catalog.json"))
     args = parser.parse_args(argv)
     try:

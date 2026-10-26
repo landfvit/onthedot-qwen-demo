@@ -15,11 +15,19 @@ https://ollama.com/library/qwen3:4b-instruct-2507-q4_K_M
 
 Football data
 
-The local Premier League 2024-25 export comes from the existing ONTHEDOT
-database, originally populated through API-Football. The public catalog contains
-names, aliases, scope and a dataset fingerprint. The full provider dataset stays
-in the ignored .local directory. Publication rights for that data have not been
-established. The provider terms do not grant a publication license.
+The included Premier League 2024-25 snapshot comes from the existing ONTHEDOT
+database, originally populated through API-Football. It contains 380 fixtures,
+20 clubs and 15,188 player appearance records, with original nulls preserved.
+
+On 2026-10-26 the project owner confirmed that they hold the required rights and
+approved public publication of this complete season snapshot, its catalog and
+recorded Qwen examples in https://github.com/landfvit/onthedot-qwen-demo.
+This supersedes the historical redistribution warning captured at export time.
+The dataset and model recordings retain their original bytes and provenance.
+No broader data license is granted by this notice.
+
+Dataset SHA256:
+b4244d2af992777dee96126b0fa3cf51d66a117b66373488c3f294a39c92a83d
 
 https://www.api-football.com/terms
 

@@ -1,4 +1,4 @@
-"""The public catalog and an independently supplied local season dataset."""
+"""The bundled season snapshot and its matching query catalog."""
 
 from functools import lru_cache
 from hashlib import sha256
@@ -25,7 +25,7 @@ def dataset_id() -> str:
 
 
 def dataset_path() -> Path:
-    return Path(os.environ.get("ONTHEDOT_DATA_PATH", ROOT / ".local" / "real-season.json")).expanduser()
+    return Path(os.environ.get("ONTHEDOT_DATA_PATH", ROOT / "data" / "season.json")).expanduser()
 
 
 def data_available() -> bool:
