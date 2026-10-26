@@ -1,0 +1,27 @@
+Model attribution
+
+The Apple Silicon runtime uses mlx-community/Qwen3-4B-Instruct-2507-4bit,
+a quantized conversion of Qwen/Qwen3-4B-Instruct-2507. Both model cards
+identify their license as Apache 2.0. Model weights are downloaded separately
+and are not included in this repository.
+
+https://huggingface.co/mlx-community/Qwen3-4B-Instruct-2507-4bit
+https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+
+The optional Ollama runtime uses qwen3:4b-instruct-2507-q4_K_M.
+It is a separate quantization and its results may differ from the MLX recordings.
+
+https://ollama.com/library/qwen3:4b-instruct-2507-q4_K_M
+
+Football data
+
+The local Premier League 2024-25 export comes from the existing ONTHEDOT
+database, originally populated through API-Football. The public catalog contains
+names, aliases, scope and a dataset fingerprint. The full provider dataset stays
+in the ignored .local directory. Publication rights for that data have not been
+established. The provider terms do not grant a publication license.
+
+https://www.api-football.com/terms
+
+No production database, credentials, account information or provider responses
+are included. Small synthetic records are used only in automated tests.

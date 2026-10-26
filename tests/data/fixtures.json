@@ -1,0 +1,522 @@
+{
+  "competition": "Demo League",
+  "notice": "Synthetic demo data. All names, fixtures and statistics are fictional. Null means unknown, not zero.",
+  "fixtures": [
+    {
+      "id": 1,
+      "date": "2024-08-10",
+      "season": "2024-25",
+      "home": "Northbridge FC",
+      "away": "Riverside FC",
+      "home_goals": 2,
+      "away_goals": 1,
+      "appearances": [
+        {
+          "player": "Alex Mercer",
+          "team": "Northbridge FC",
+          "minutes": 90,
+          "goals": 2,
+          "assists": 0,
+          "shots": 5
+        },
+        {
+          "player": "Theo Blake",
+          "team": "Northbridge FC",
+          "minutes": 60,
+          "goals": 0,
+          "assists": 2,
+          "shots": 2
+        },
+        {
+          "player": "Noah Silva",
+          "team": "Riverside FC",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "shots": 3
+        },
+        {
+          "player": "Liam Grant",
+          "team": "Riverside FC",
+          "minutes": 30,
+          "goals": 0,
+          "assists": 1,
+          "shots": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "date": "2024-08-24",
+      "season": "2024-25",
+      "home": "Riverside FC",
+      "away": "Northbridge FC",
+      "home_goals": 0,
+      "away_goals": 0,
+      "appearances": [
+        {
+          "player": "Alex Mercer",
+          "team": "Northbridge FC",
+          "minutes": 30,
+          "goals": 0,
+          "assists": 0,
+          "shots": 1
+        },
+        {
+          "player": "Theo Blake",
+          "team": "Northbridge FC",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "shots": 2
+        },
+        {
+          "player": "Noah Silva",
+          "team": "Riverside FC",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "shots": 1
+        },
+        {
+          "player": "Liam Grant",
+          "team": "Riverside FC",
+          "minutes": 70,
+          "goals": 0,
+          "assists": 0,
+          "shots": null
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "date": "2024-09-07",
+      "season": "2024-25",
+      "home": "Northbridge FC",
+      "away": "Riverside FC",
+      "home_goals": 1,
+      "away_goals": 3,
+      "appearances": [
+        {
+          "player": "Alex Mercer",
+          "team": "Northbridge FC",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "shots": 4
+        },
+        {
+          "player": "Theo Blake",
+          "team": "Northbridge FC",
+          "minutes": 75,
+          "goals": 0,
+          "assists": 1,
+          "shots": 1
+        },
+        {
+          "player": "Noah Silva",
+          "team": "Riverside FC",
+          "minutes": 90,
+          "goals": 2,
+          "assists": 1,
+          "shots": 6
+        },
+        {
+          "player": "Liam Grant",
+          "team": "Riverside FC",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 1,
+          "shots": null
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "date": "2024-09-21",
+      "season": "2024-25",
+      "home": "Riverside FC",
+      "away": "Northbridge FC",
+      "home_goals": 2,
+      "away_goals": 1,
+      "appearances": [
+        {
+          "player": "Alex Mercer",
+          "team": "Northbridge FC",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 1,
+          "shots": 2
+        },
+        {
+          "player": "Theo Blake",
+          "team": "Northbridge FC",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "shots": 3
+        },
+        {
+          "player": "Noah Silva",
+          "team": "Riverside FC",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 1,
+          "shots": 4
+        },
+        {
+          "player": "Liam Grant",
+          "team": "Riverside FC",
+          "minutes": 45,
+          "goals": 1,
+          "assists": 0,
+          "shots": null
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "date": "2024-10-05",
+      "season": "2024-25",
+      "home": "Northbridge FC",
+      "away": "Riverside FC",
+      "home_goals": 3,
+      "away_goals": 1,
+      "appearances": [
+        {
+          "player": "Alex Mercer",
+          "team": "Northbridge FC",
+          "minutes": 60,
+          "goals": 1,
+          "assists": 1,
+          "shots": 4
+        },
+        {
+          "player": "Theo Blake",
+          "team": "Northbridge FC",
+          "minutes": 90,
+          "goals": 2,
+          "assists": 1,
+          "shots": 5
+        },
+        {
+          "player": "Noah Silva",
+          "team": "Riverside FC",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "shots": 3
+        },
+        {
+          "player": "Liam Grant",
+          "team": "Riverside FC",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 1,
+          "shots": null
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "date": "2024-10-19",
+      "season": "2024-25",
+      "home": "Riverside FC",
+      "away": "Northbridge FC",
+      "home_goals": 1,
+      "away_goals": 2,
+      "appearances": [
+        {
+          "player": "Alex Mercer",
+          "team": "Northbridge FC",
+          "minutes": 90,
+          "goals": 2,
+          "assists": 0,
+          "shots": 6
+        },
+        {
+          "player": "Theo Blake",
+          "team": "Northbridge FC",
+          "minutes": 60,
+          "goals": 0,
+          "assists": 2,
+          "shots": 1
+        },
+        {
+          "player": "Noah Silva",
+          "team": "Riverside FC",
+          "minutes": 60,
+          "goals": 0,
+          "assists": 1,
+          "shots": 2
+        },
+        {
+          "player": "Liam Grant",
+          "team": "Riverside FC",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "shots": null
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "date": "2025-08-10",
+      "season": "2025-26",
+      "home": "Northbridge FC",
+      "away": "Riverside FC",
+      "home_goals": 1,
+      "away_goals": 0,
+      "appearances": [
+        {
+          "player": "Alex Mercer",
+          "team": "Northbridge FC",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "shots": 4
+        },
+        {
+          "player": "Theo Blake",
+          "team": "Northbridge FC",
+          "minutes": 80,
+          "goals": 0,
+          "assists": 1,
+          "shots": 2
+        },
+        {
+          "player": "Noah Silva",
+          "team": "Riverside FC",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "shots": 2
+        },
+        {
+          "player": "Liam Grant",
+          "team": "Riverside FC",
+          "minutes": 60,
+          "goals": 0,
+          "assists": 0,
+          "shots": 1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "date": "2025-08-24",
+      "season": "2025-26",
+      "home": "Riverside FC",
+      "away": "Northbridge FC",
+      "home_goals": 2,
+      "away_goals": 2,
+      "appearances": [
+        {
+          "player": "Alex Mercer",
+          "team": "Northbridge FC",
+          "minutes": 45,
+          "goals": 1,
+          "assists": 1,
+          "shots": 3
+        },
+        {
+          "player": "Theo Blake",
+          "team": "Northbridge FC",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 1,
+          "shots": 4
+        },
+        {
+          "player": "Noah Silva",
+          "team": "Riverside FC",
+          "minutes": 90,
+          "goals": 2,
+          "assists": 0,
+          "shots": 6
+        },
+        {
+          "player": "Liam Grant",
+          "team": "Riverside FC",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 2,
+          "shots": 2
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "date": "2025-09-07",
+      "season": "2025-26",
+      "home": "Northbridge FC",
+      "away": "Riverside FC",
+      "home_goals": 0,
+      "away_goals": 1,
+      "appearances": [
+        {
+          "player": "Alex Mercer",
+          "team": "Northbridge FC",
+          "minutes": 90,
+          "goals": null,
+          "assists": 0,
+          "shots": 2
+        },
+        {
+          "player": "Theo Blake",
+          "team": "Northbridge FC",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "shots": 1
+        },
+        {
+          "player": "Noah Silva",
+          "team": "Riverside FC",
+          "minutes": 60,
+          "goals": 1,
+          "assists": 0,
+          "shots": 3
+        },
+        {
+          "player": "Liam Grant",
+          "team": "Riverside FC",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 1,
+          "shots": 1
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "date": "2025-09-21",
+      "season": "2025-26",
+      "home": "Riverside FC",
+      "away": "Northbridge FC",
+      "home_goals": 1,
+      "away_goals": 3,
+      "appearances": [
+        {
+          "player": "Alex Mercer",
+          "team": "Northbridge FC",
+          "minutes": 90,
+          "goals": 2,
+          "assists": 1,
+          "shots": 6
+        },
+        {
+          "player": "Theo Blake",
+          "team": "Northbridge FC",
+          "minutes": 60,
+          "goals": 1,
+          "assists": 2,
+          "shots": 3
+        },
+        {
+          "player": "Noah Silva",
+          "team": "Riverside FC",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "shots": 2
+        },
+        {
+          "player": "Liam Grant",
+          "team": "Riverside FC",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 1,
+          "shots": 4
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "date": "2025-10-05",
+      "season": "2025-26",
+      "home": "Northbridge FC",
+      "away": "Riverside FC",
+      "home_goals": 2,
+      "away_goals": 2,
+      "appearances": [
+        {
+          "player": "Alex Mercer",
+          "team": "Northbridge FC",
+          "minutes": 30,
+          "goals": 0,
+          "assists": 1,
+          "shots": 1
+        },
+        {
+          "player": "Theo Blake",
+          "team": "Northbridge FC",
+          "minutes": 90,
+          "goals": 2,
+          "assists": 0,
+          "shots": 6
+        },
+        {
+          "player": "Noah Silva",
+          "team": "Riverside FC",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 1,
+          "shots": 4
+        },
+        {
+          "player": "Liam Grant",
+          "team": "Riverside FC",
+          "minutes": 45,
+          "goals": 1,
+          "assists": 1,
+          "shots": 3
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "date": "2025-10-19",
+      "season": "2025-26",
+      "home": "Riverside FC",
+      "away": "Northbridge FC",
+      "home_goals": 0,
+      "away_goals": 1,
+      "appearances": [
+        {
+          "player": "Alex Mercer",
+          "team": "Northbridge FC",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "shots": 3
+        },
+        {
+          "player": "Theo Blake",
+          "team": "Northbridge FC",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 1,
+          "shots": 2
+        },
+        {
+          "player": "Noah Silva",
+          "team": "Riverside FC",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "shots": 1
+        },
+        {
+          "player": "Liam Grant",
+          "team": "Riverside FC",
+          "minutes": 0,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0
+        }
+      ]
+    }
+  ]
+}

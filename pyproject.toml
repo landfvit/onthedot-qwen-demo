@@ -1,0 +1,19 @@
+[project]
+name = "onthedot-qwen-demo"
+version = "0.1.0"
+description = "A focused demonstration of Qwen question parsing and validated football analytics"
+requires-python = ">=3.12,<3.15"
+dependencies = [
+    "fastapi>=0.162,<1",
+    "pydantic>=2.10,<3",
+    "uvicorn>=0.30,<1",
+]
+
+[project.optional-dependencies]
+mlx = ["mlx-lm==0.31.3; sys_platform == 'darwin' and platform_machine == 'arm64'"]
+export = ["psycopg[binary]>=3.2,<4"]
+dev = ["pytest>=8,<10", "httpx2>=2.16,<3"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

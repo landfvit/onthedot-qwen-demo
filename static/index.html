@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>ONTHEDOT | Football questions</title>
+    <link rel="stylesheet" href="/static/style.css?v=6ea347e1281e">
+    <script src="/static/app.js?v=c56f3ba57956" defer></script>
+  </head>
+  <body>
+    <main class="workbench">
+      <header class="app-header">
+        <div class="identity">
+          <h1>ONTHEDOT</h1>
+          <span>Football question parser</span>
+        </div>
+        <span id="data-label" class="data-label">Loading dataset</span>
+      </header>
+
+      <form id="question-form" class="question-panel panel">
+        <div class="controls">
+          <label class="mode-control">Mode
+            <select id="mode-select" name="mode">
+              <option value="recorded">Recorded examples</option>
+              <option value="live">Live Qwen</option>
+            </select>
+          </label>
+          <label class="example-control">Example question
+            <select id="example-select" name="example" disabled>
+              <option value="">Loading examples</option>
+            </select>
+          </label>
+        </div>
+        <label class="question-label" for="question-input">Question</label>
+        <textarea id="question-input" name="question" rows="3" maxlength="1000" spellcheck="false" required disabled></textarea>
+        <div class="run-row">
+          <span id="mode-description" class="secondary">Replays a saved Qwen response for an included question.</span>
+          <button id="run-button" type="submit" disabled>Run question</button>
+        </div>
+        <p id="request-status" class="status" role="status" aria-live="polite">Loading the workbench.</p>
+        <p id="data-status" class="data-status" hidden></p>
+        <details id="catalog-details" class="catalog-details" hidden>
+          <summary>Available data</summary>
+          <dl id="catalog-list"></dl>
+        </details>
+      </form>
+
+      <div class="output-grid">
+        <section class="panel query-panel" aria-labelledby="query-heading">
+          <div class="panel-heading">
+            <h2 id="query-heading">Parsed query</h2>
+            <span id="validation-label" class="state-label">Waiting</span>
+          </div>
+          <p id="query-message" class="secondary empty-state">Run a question to inspect the validated query.</p>
+          <pre id="query-output" class="json-output" tabindex="0" aria-label="Validated query JSON" hidden></pre>
+          <details id="raw-details" class="raw-details" hidden>
+            <summary>Raw Qwen output</summary>
+            <pre id="raw-output" class="json-output raw-output" tabindex="0"></pre>
+          </details>
+          <div id="generation-details" class="generation-details" hidden>
+            <span id="generation-mode"></span>
+            <span id="inference-time"></span>
+          </div>
+        </section>
+
+        <section class="panel result-panel" aria-labelledby="result-heading">
+          <div class="panel-heading">
+            <h2 id="result-heading">Result</h2>
+            <span id="result-label" class="state-label">Waiting</span>
+          </div>
+          <p id="result-message" class="secondary empty-state">Run a question to inspect the analytics result.</p>
+          <div id="result-content" hidden>
+            <p id="result-metric" class="result-metric"></p>
+            <div class="table-scroll">
+              <table id="result-table">
+                <caption class="visually-hidden">Analytics result from the local season dataset</caption>
+                <thead><tr id="result-table-head"></tr></thead>
+                <tbody id="result-table-body"></tbody>
+              </table>
+            </div>
+            <div id="result-chart" class="result-chart"></div>
+          </div>
+          <p id="result-notice" class="result-notice" hidden></p>
+        </section>
+      </div>
+
+      <section class="panel sql-panel" aria-labelledby="sql-heading">
+        <div class="panel-heading">
+          <h2 id="sql-heading">SQL query</h2>
+          <span class="state-label">Parameterized SQLite</span>
+        </div>
+        <p id="sql-message" class="secondary empty-state">No analytics query was executed.</p>
+        <div id="sql-output" hidden></div>
+      </section>
+
+      <footer class="app-footer">
+        <details class="model-details">
+          <summary id="model-label">Model details</summary>
+          <dl>
+            <div><dt>Model</dt><dd id="model-id">Loading</dd></div>
+            <div><dt>Revision</dt><dd id="model-revision">Loading</dd></div>
+            <div><dt>Live inference</dt><dd id="live-status">Checking</dd></div>
+          </dl>
+        </details>
+        <span id="processing-time" class="secondary"></span>
+      </footer>
+    </main>
+  </body>
+</html>
